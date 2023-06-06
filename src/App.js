@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
+import Header from "./components/Header";
+import ProductsSection from "./components/ProductsSection";
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-bgColor2">
+      <div className="bg-bgColor1">
+        {/* header section */}
+        <section className="sticky top-0 shadow-md">
+          <Header />
+        </section>
+
+        {/* about section */}
+        <section className="mb-8 mt-8 lg:mt-32 lg:mb-32">
+          <AboutSection />
+        </section>
+
+        {/* product section */}
+        <section className="mb-8 lg:mb-32">
+          <ProductsSection />
+        </section>
+
+        {/* contact section */}
+        <section className="pb-8 lg:pb-32">
+          <ContactSection />
+        </section>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Home;
