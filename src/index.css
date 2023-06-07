@@ -10,4 +10,8 @@
   .heading {
     @apply font-inter font-semibold text-xl lg:text-2xl xl:text-4xl text-center text-blue4 mb-10;
   }
+
+  .contactInput {
+    @apply bg-slate-400/10 outline-none text-gray-900 placeholder-gray-700 rounded-sm border-b px-6 py-4 border-gray-300 transition-all focus:border-b-blue12/40 focus:text-blue4/70 hover:border-blue12/40;
+  }
 }
