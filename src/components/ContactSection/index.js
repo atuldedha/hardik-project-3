@@ -49,14 +49,14 @@ const ContactSection = () => {
           <div className="space-y-2 items-start">
             <h3 className="heading mb-0 text-center lg:text-left">Contact</h3>
           </div>
-          <div className="grid place-items-center lg:place-items-start grid-cols-2 mt-5 w-full">
-            <div className="flex items-center space-x-2 md:space-x-5">
-              <PhoneIcon className="animate-pulse text-orange1 h-4 w-4 md:h-6 md:w-6" />
-              <p className="text-sm md:text-base">+918928775685</p>
+          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-1 lg:place-items-start gap-1 mt-5 w-full max-w-2xl">
+            <div className="flex items-center space-x-2">
+              <PhoneIcon className="animate-pulse text-orange1 h-3 w-3 md:h-4 md:w-4" />
+              <p className="text-xs sm:text-sm md:text-base">+918928775685</p>
             </div>
-            <div className="flex items-center space-x-2 md:space-x-5">
-              <EnvelopeIcon className="animate-pulse text-orange1 h-4 w-4 md:h-6 md:w-6" />
-              <p className="text-sm md:text-base">
+            <div className="flex items-center space-x-2">
+              <EnvelopeIcon className="animate-pulse text-orange1 h-3 w-3 md:h-4 md:w-4" />
+              <p className="text-xs sm:text-sm md:text-base">
                 hardik.panchal@agratasindustries.com
               </p>
             </div>
