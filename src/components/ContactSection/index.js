@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import {
-  EnvelopeIcon,
-  MapPinIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
@@ -53,18 +49,16 @@ const ContactSection = () => {
           <div className="space-y-2 items-start">
             <h3 className="heading mb-0 text-center lg:text-left">Contact</h3>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-5 place-items-start sm:place-items-center lg:place-items-start items-start mt-5 w-full">
+          <div className="grid place-items-center lg:place-items-start grid-cols-2 mt-5 w-full">
             <div className="flex items-center space-x-2 md:space-x-5">
               <PhoneIcon className="animate-pulse text-orange1 h-4 w-4 md:h-6 md:w-6" />
-              <p className="text-sm md:text-base">+9188888888</p>
+              <p className="text-sm md:text-base">+918928775685</p>
             </div>
             <div className="flex items-center space-x-2 md:space-x-5">
               <EnvelopeIcon className="animate-pulse text-orange1 h-4 w-4 md:h-6 md:w-6" />
-              <p className="text-sm md:text-base">lorem@gmail.com</p>
-            </div>
-            <div className="flex items-center space-x-2 md:space-x-5">
-              <MapPinIcon className="animate-pulse text-orange1 h-4 w-4 md:h-6 md:w-6" />
-              <p className="text-sm md:text-base">India</p>
+              <p className="text-sm md:text-base">
+                hardik.panchal@agratasindustries.com
+              </p>
             </div>
           </div>
         </div>

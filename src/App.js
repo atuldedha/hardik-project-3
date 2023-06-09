@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import ProductsSection from "./components/ProductsSection";
 
 function Home() {
-  const number = "+918888888888";
+  const number = "+918928775685";
   return (
     <div className="bg-bgColor2">
       <div className="bg-bgColor1">
