@@ -10,7 +10,7 @@ function Home() {
     <div className="bg-bgColor2">
       <div className="bg-bgColor1">
         {/* header section */}
-        <section className="sticky top-0 shadow-md z-10">
+        <section className="sticky top-0 shadow-md z-[10000]">
           <Header />
         </section>
 

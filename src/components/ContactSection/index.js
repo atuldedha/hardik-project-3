@@ -10,6 +10,7 @@ const ContactSection = () => {
     message: "",
   });
   const [submitButtonDisable, setSubmitButtonDisable] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
 
   const handleChangle = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,7 +28,7 @@ const ContactSection = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setMessageSent(true);
           setFormData({ name: "", email: "", subject: "", message: "" });
           setSubmitButtonDisable(false);
         },
@@ -69,51 +70,59 @@ const ContactSection = () => {
           className="basis-1/2 flex flex-col items-center w-full"
           onSubmit={handleSubmit}
         >
-          <div className="flex flex-col w-full space-y-2 max-w-2xl">
-            <div className="flex space-x-2 items-center w-full max-w-2xl">
+          {messageSent ? (
+            <p className="text-lg text-gray2 font-inter font-bold">
+              Your Query has been submitted successfully. We will revert back to
+              you shortly.
+            </p>
+          ) : (
+            <div className="flex flex-col w-full space-y-2 max-w-2xl">
+              <div className="flex space-x-2 items-center w-full max-w-2xl">
+                <input
+                  name="name"
+                  type="text"
+                  className="contactInput w-full"
+                  placeholder="Name"
+                  onChange={handleChangle}
+                />
+                <input
+                  name="email"
+                  placeholder="Email"
+                  onChange={handleChangle}
+                  type="email"
+                  className="contactInput w-full"
+                />
+              </div>
               <input
-                name="name"
+                name="subject"
                 type="text"
-                className="contactInput w-full"
-                placeholder="Name"
+                placeholder="Subject"
                 onChange={handleChangle}
+                className="contactInput"
               />
-              <input
-                name="email"
-                placeholder="Email"
-                onChange={handleChangle}
-                type="email"
-                className="contactInput w-full"
-              />
-            </div>
-            <input
-              name="subject"
-              type="text"
-              placeholder="Subject"
-              onChange={handleChangle}
-              className="contactInput"
-            />
 
-            <textarea
-              name="message"
-              rows={5}
-              placeholder="Message"
-              onChange={handleChangle}
-              className="contactInput"
-            />
-            <button
-              type="submit"
-              disabled={submitButtonDisable}
-              className="px-5 py-3 rounded-md text-white font-bold text-lg cursor-pointer"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(79, 172, 254, 0.6) 0%, rgba(0, 242, 254, 0.6) 100%), #2898FF",
-              }}
-              onClick={handleSubmit}
-            >
-              Submit
-            </button>
-          </div>
+              <textarea
+                name="message"
+                rows={5}
+                placeholder="Message"
+                onChange={handleChangle}
+                className="contactInput"
+              />
+              <button
+                type="submit"
+                disabled={submitButtonDisable}
+                className="px-5 py-3 rounded-md text-white font-bold text-lg cursor-pointer"
+                style={{
+                  background: submitButtonDisable
+                    ? "#cccccc"
+                    : "linear-gradient(90deg, rgba(79, 172, 254, 0.6) 0%, rgba(0, 242, 254, 0.6) 100%), #2898FF",
+                }}
+                onClick={handleSubmit}
+              >
+                Submit
+              </button>
+            </div>
+          )}
         </form>
       </div>
     </div>
