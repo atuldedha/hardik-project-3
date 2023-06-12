@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Logo from "../../images/logo.jpg";
 import MenuIcon from "../../images/menuIcon.svg";
 
-const Header = () => {
+const Header = ({ handleScroll }) => {
+  // menu state
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // toggle mobile menu
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
@@ -49,56 +51,59 @@ const Header = () => {
           <div
             className={`p-4 absolute top-0 left-0 right-0 z-10  bg-blue12 flex flex-col items-center justify-center lg:hidden rounded-bl-lg rounded-br-lg w-full space-y-6`}
           >
-            <div className="flex flex-col items-center space-y-6">
-              <button
-                className="flex items-center py-3 px-8 rounded-[90px] font-raleway text-sm text-white font-bold cursor-pointer"
-                style={{
-                  background:
-                    "linear-gradient(90deg, rgba(79, 172, 254, 0.6) 0%, rgba(0, 242, 254, 0.6) 100%), #2898FF",
-                }}
-              >
-                Login
-              </button>
-            </div>
-            <span className="text-sm font-inter text-white font-medium cursor-pointer">
+            <span
+              className="text-sm font-inter text-white font-medium cursor-pointer"
+              onClick={() => handleScroll("Home")}
+            >
               Home
             </span>
-            <span className="text-sm font-inter text-white font-medium cursor-pointer">
+            <span
+              className="text-sm font-inter text-white font-medium cursor-pointer"
+              onClick={() => handleScroll("About")}
+            >
               About
             </span>
-            <span className="text-sm font-inter text-white font-medium cursor-pointer">
+            <span
+              className="text-sm font-inter text-white font-medium cursor-pointer"
+              onClick={() => handleScroll("Products")}
+            >
               Products
             </span>
-            <span className="text-sm font-inter text-white font-medium cursor-pointer">
+            <span
+              className="text-sm font-inter text-white font-medium cursor-pointer"
+              onClick={() => handleScroll("Contact")}
+            >
               Contact
             </span>
           </div>
         </>
       )}
-      {/* middle nav tabs */}
+      {/* middle nav tabs || desktop menu */}
       <div className="hidden lg:flex items-center space-x-6">
-        <span className="text-sm font-inter text-blue1 font-medium cursor-pointer">
+        <span
+          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          onClick={() => handleScroll("Home")}
+        >
           Home
         </span>
-        <span className="text-sm font-inter text-blue1 font-medium cursor-pointer">
+        <span
+          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          onClick={() => handleScroll("About")}
+        >
           About
         </span>
-        <span className="text-sm font-inter text-blue1 font-medium cursor-pointer">
+        <span
+          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          onClick={() => handleScroll("Products")}
+        >
           Products
         </span>
-        <span className="text-sm font-inter text-blue1 font-medium cursor-pointer">
+        <span
+          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          onClick={() => handleScroll("Contact")}
+        >
           Contact
         </span>
-
-        <button
-          className="flex items-center py-3 px-8 rounded-[90px] font-raleway text-sm text-white font-bold cursor-pointer"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(79, 172, 254, 0.6) 0%, rgba(0, 242, 254, 0.6) 100%), #2898FF",
-          }}
-        >
-          Log in
-        </button>
       </div>
     </div>
   );

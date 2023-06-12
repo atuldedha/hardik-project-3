@@ -1,6 +1,6 @@
 import React from "react";
 
-// review card component
+// product card component
 const ProductCard = ({ description, productName, image }) => {
   return (
     <div className="flex flex-col relative bg-white shadow-shadow4 rounded-xl px-4 py-5 ml-2 lg:ml-4">

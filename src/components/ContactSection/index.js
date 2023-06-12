@@ -3,22 +3,28 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
+  // form state
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
+  // disable submit button state
   const [submitButtonDisable, setSubmitButtonDisable] = useState(false);
+  // message sent state
   const [messageSent, setMessageSent] = useState(false);
 
+  // handle input fields change
   const handleChangle = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitButtonDisable(true);
+    // email js function to send mails
     emailjs
       .send(
         process.env.REACT_APP_EMAIL_SERVICE_ID,

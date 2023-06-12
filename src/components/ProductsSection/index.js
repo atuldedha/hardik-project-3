@@ -27,7 +27,7 @@ const ProductsSection = () => {
     <div className="sectionContainer">
       <h1 className="heading">Products</h1>
 
-      {/* review cards */}
+      {/* product cards */}
       {/* dummy data */}
       <div className="w-full h-full">
         <Carousel
