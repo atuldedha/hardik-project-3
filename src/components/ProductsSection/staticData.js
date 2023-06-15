@@ -1,72 +1,19 @@
-import Robot1 from "../../images/robot1.jpg";
-import Robot2 from "../../images/robot2.jpg";
-import Robot3 from "../../images/robot3.jpg";
+import Product1 from "../../images/product1.jpeg";
+import ComingSoon from "../../images/comingSoon.jpg";
 
 const reviewData = [
   {
     id: 1,
     smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot1,
-    productName: "John",
+      "“Saarthi” aims to be a pioneer and revolutionize the way hiring occurs in India. Our long term vision is to connect every person to the correct opportunity right from being a student to a job seeker.",
+    image: Product1,
+    productName: "Saarthi",
   },
   {
     id: 2,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot2,
-    productName: "Gabie",
-  },
-  {
-    id: 3,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot3,
-    productName: "Dow",
-  },
-
-  {
-    id: 4,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot1,
-    productName: "John",
-  },
-  {
-    id: 5,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot2,
-    productName: "Gabie",
-  },
-  {
-    id: 6,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot3,
-    productName: "Dow",
-  },
-
-  {
-    id: 7,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot1,
-    productName: "John",
-  },
-  {
-    id: 8,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot2,
-    productName: "Gabie",
-  },
-  {
-    id: 9,
-    smallDesc:
-      "I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies.",
-    image: Robot3,
-    productName: "Dow",
+    smallDesc: "Aam Admi ka Business Network.",
+    image: ComingSoon,
+    productName: "Kaamkaaz",
   },
 ];
 

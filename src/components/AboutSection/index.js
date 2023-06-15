@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/logo.jpg";
+import Logo from "../../images/logo.jpeg";
 
 const AboutSection = () => {
   return (
@@ -7,7 +7,11 @@ const AboutSection = () => {
       <h1 className="heading">About</h1>
 
       <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row items-center space-x-0 lg:space-x-12 ">
-        <img src={Logo} alt="logo" className="w-48 lg:w-72 object-contain" />
+        <img
+          src={Logo}
+          alt="logo"
+          className="w-48 lg:w-72 object-contain rounded-xl"
+        />
 
         <p className="text-sm md:text-base text-justify font-inter font-normal">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam

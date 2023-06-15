@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../images/logo.jpg";
+import Logo from "../../images/logo.jpeg";
 import MenuIcon from "../../images/menuIcon.svg";
 
 const Header = ({ handleScroll }) => {
@@ -15,12 +15,16 @@ const Header = ({ handleScroll }) => {
     <div className="flex items-center px-4 lg:px-16 xl:px-64 py-4 justify-between bg-white">
       {/* logo */}
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-4">
         <img
           src={Logo}
           alt="logo"
           className="h-7 lg:h-12 object-contain rounded-full"
         />
+
+        <span className="text-base xl:text-lg font-inter text-blue1 font-semibold">
+          Agratas Industries
+        </span>
       </div>
 
       {/* mobile menu icon */}
@@ -81,25 +85,25 @@ const Header = ({ handleScroll }) => {
       {/* middle nav tabs || desktop menu */}
       <div className="hidden lg:flex items-center space-x-6">
         <span
-          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          className="text-base font-inter text-blue1 font-medium cursor-pointer"
           onClick={() => handleScroll("Home")}
         >
           Home
         </span>
         <span
-          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          className="text-base font-inter text-blue1 font-medium cursor-pointer"
           onClick={() => handleScroll("About")}
         >
           About
         </span>
         <span
-          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          className="text-base font-inter text-blue1 font-medium cursor-pointer"
           onClick={() => handleScroll("Products")}
         >
           Products
         </span>
         <span
-          className="text-sm font-inter text-blue1 font-medium cursor-pointer"
+          className="text-base font-inter text-blue1 font-medium cursor-pointer"
           onClick={() => handleScroll("Contact")}
         >
           Contact

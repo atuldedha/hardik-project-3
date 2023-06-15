@@ -31,7 +31,7 @@ const ProductsSection = () => {
       {/* dummy data */}
       <div className="w-full h-full">
         <Carousel
-          showDots={true}
+          showDots={false}
           swipeable={true}
           responsive={responsive}
           dotListClass="custom-dot-list-style"

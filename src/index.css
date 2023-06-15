@@ -8,7 +8,7 @@
     @apply flex flex-col px-8 lg:px-16 xl:px-32 items-center;
   }
   .heading {
-    @apply font-inter font-semibold text-xl lg:text-2xl xl:text-4xl text-center text-blue4 mb-10;
+    @apply font-inter font-semibold text-xl lg:text-2xl xl:text-5xl text-center text-blue4 mb-10;
   }
 
   .contactInput {

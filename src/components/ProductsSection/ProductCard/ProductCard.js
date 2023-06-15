@@ -3,7 +3,7 @@ import React from "react";
 // product card component
 const ProductCard = ({ description, productName, image }) => {
   return (
-    <div className="flex flex-col relative bg-white shadow-shadow4 rounded-xl px-4 py-5 ml-2 lg:ml-4">
+    <div className="flex flex-col relative bg-white shadow-shadow4 rounded-xl px-4 py-5 ml-2 lg:ml-4 h-full">
       {/* product image */}
       <img src={image} alt="marks" className="" />
 

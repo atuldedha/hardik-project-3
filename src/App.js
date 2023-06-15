@@ -44,7 +44,7 @@ function Home() {
 
         {/* about section */}
         <section
-          className="mb-8 mt-8 lg:mt-32 lg:mb-32"
+          className="mb-8 mt-8 lg:mt-24 lg:mb-24"
           ref={(el) => attachRef("About", el)}
         >
           <AboutSection />
@@ -60,7 +60,7 @@ function Home() {
 
         {/* contact section */}
         <section
-          className="bg-bgColor2 pt-4 lg:pt-16 pb-14 lg:pb-36"
+          className="bg-bgColor2 pt-4 lg:pt-16 pb-14 lg:pb-24"
           ref={(el) => attachRef("Contact", el)}
         >
           <ContactSection />

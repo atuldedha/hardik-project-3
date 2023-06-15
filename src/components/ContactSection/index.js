@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import {
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/outline";
 import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
@@ -56,15 +60,22 @@ const ContactSection = () => {
           <div className="space-y-2 items-start">
             <h3 className="heading mb-0 text-center lg:text-left">Contact</h3>
           </div>
-          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-1 lg:place-items-start gap-1 mt-5 w-full max-w-2xl">
+          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-1 sm:place-items-start gap-1 mt-5 w-full">
             <div className="flex items-center space-x-2">
-              <PhoneIcon className="animate-pulse text-orange1 h-3 w-3 md:h-4 md:w-4" />
+              <PhoneIcon className="animate-pulse h-5 w-6 md:h-6" />
               <p className="text-xs sm:text-sm md:text-base">+918928775685</p>
             </div>
             <div className="flex items-center space-x-2">
-              <EnvelopeIcon className="animate-pulse text-orange1 h-3 w-3 md:h-4 md:w-4" />
+              <EnvelopeIcon className="animate-pulse h-5 w-6 md:h-6" />
               <p className="text-xs sm:text-sm md:text-base">
                 hardik.panchal@agratasindustries.com
+              </p>
+            </div>
+            <div className="flex items-start space-x-2">
+              <MapPinIcon className="animate-pulse text-base h-5 w-8 md:h-6" />
+              <p className="text-xs sm:text-sm lg:text-base text-center md:text-start">
+                MIG2 B903, Gujarat Housing Board, (Phase-1), Near Shanti Nagar,
+                Tithal Road, Valsad, Gujarat-396001.
               </p>
             </div>
           </div>
