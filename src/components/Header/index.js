@@ -22,7 +22,7 @@ const Header = ({ handleScroll }) => {
           className="h-7 lg:h-12 object-contain rounded-full"
         />
 
-        <span className="text-base xl:text-lg font-inter text-blue1 font-semibold">
+        <span className="text-xl xl:text-2xl font-inter text-blue1 font-semibold">
           Agratas Industries
         </span>
       </div>

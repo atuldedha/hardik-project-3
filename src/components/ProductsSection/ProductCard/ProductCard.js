@@ -5,9 +5,9 @@ const ProductCard = ({ description, productName, image }) => {
   return (
     <div className="flex flex-col relative bg-white shadow-shadow4 rounded-xl px-4 py-5 ml-2 lg:ml-4 h-full">
       {/* product image */}
-      <img src={image} alt="marks" className="" />
+      <img src={image} alt="marks" className="h-44 md:h-64 object-scale-down" />
 
-      <div className="px-10 py-5">
+      <div className="p-5">
         {/* product name */}
         <span className="text-gray1 text-normal font-normal font-montserrat">
           Product Name: {productName}

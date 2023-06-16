@@ -10,7 +10,7 @@ const AboutSection = () => {
         <img
           src={Logo}
           alt="logo"
-          className="w-48 lg:w-72 object-contain rounded-xl"
+          className="w-40 lg:w-56 object-contain rounded-xl"
         />
 
         <p className="text-sm md:text-base text-justify font-inter font-normal">
