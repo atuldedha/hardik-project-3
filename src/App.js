@@ -32,8 +32,8 @@ function Home() {
   // whatsapp number
   const number = "+918928775685";
   return (
-    <div className="bg-bgColor2">
-      <div className="bg-bgColor1">
+    <div className="">
+      <div className="bg-white">
         {/* header section */}
         <section
           className="sticky top-0 shadow-md z-[10000]"
@@ -60,7 +60,7 @@ function Home() {
 
         {/* contact section */}
         <section
-          className="bg-bgColor2 pt-4 lg:pt-16 pb-14 lg:pb-24"
+          className="bg-white pt-4 lg:pt-16 pb-14 lg:pb-24"
           ref={(el) => attachRef("Contact", el)}
         >
           <ContactSection />

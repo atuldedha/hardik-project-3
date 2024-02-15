@@ -9,12 +9,6 @@ const reviewData = [
     image: Product1,
     productName: "Saarthi",
   },
-  {
-    id: 2,
-    smallDesc: "Aam Admi ka Business Network.",
-    image: ComingSoon,
-    productName: "Kaamkaaz",
-  },
 ];
 
 export default reviewData;

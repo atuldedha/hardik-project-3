@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../../images/logo.jpeg";
+// import Logo from "../../images/logo.jpeg";
+import Logo from "../../images/new_logo.png";
 
 const AboutSection = () => {
   return (
@@ -10,10 +11,10 @@ const AboutSection = () => {
         <img
           src={Logo}
           alt="logo"
-          className="w-40 lg:w-56 object-contain rounded-xl"
+          className="w-56 lg:w-64 object-contain rounded-xl"
         />
 
-        <p className="text-sm md:text-base text-justify font-inter font-normal">
+        <p className="text-sm text-justify font-poppins font-normal">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
           facilisis mauris urna, sed iaculis nibh elementum quis. Morbi iaculis
           augue nec eros elementum, quis tincidunt urna varius. Cras id posuere

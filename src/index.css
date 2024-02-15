@@ -8,10 +8,10 @@
     @apply flex flex-col px-8 lg:px-16 xl:px-32 items-center;
   }
   .heading {
-    @apply font-inter font-semibold text-2xl lg:text-4xl xl:text-6xl text-center text-blue4 mb-10;
+    @apply font-poppins font-semibold text-2xl lg:text-4xl xl:text-6xl text-center text-blue4 mb-10;
   }
 
   .contactInput {
-    @apply bg-slate-400/10 outline-none text-gray-900 placeholder-gray-700 rounded-sm border-b px-6 py-4 border-gray-300 transition-all focus:border-b-blue12/40 focus:text-blue4/70 hover:border-blue12/40;
+    @apply bg-slate-400/10 font-poppins outline-none text-gray-900 placeholder-gray-700 rounded-md border-b px-6 py-4 border-gray-300 transition-all focus:border-b-blue12/40 focus:text-blue4/70 hover:border-blue12/40;
   }
 }
