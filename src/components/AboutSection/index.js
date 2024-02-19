@@ -15,23 +15,16 @@ const AboutSection = () => {
         />
 
         <p className="text-sm text-justify font-poppins font-normal">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          facilisis mauris urna, sed iaculis nibh elementum quis. Morbi iaculis
-          augue nec eros elementum, quis tincidunt urna varius. Cras id posuere
-          est. In hac habitasse platea dictumst. Pellentesque id est facilisis,
-          cursus mi sit amet, vestibulum erat. Vivamus scelerisque purus ligula,
-          at mollis purus lobortis et. Fusce suscipit tempor turpis, in
-          fermentum augue ultrices vitae. Donec eget faucibus lectus. Nulla
-          pellentesque ipsum orci, finibus finibus lectus mattis placerat. Etiam
-          at venenatis lectus, sed efficitur libero. Cras ullamcorper gravida
-          sapien, in suscipit dolor porttitor et. Aliquam arcu ante, faucibus
-          quis velit sed, ornare pharetra nisl. Sed blandit tortor sed felis
-          tempor congue. Cras pellentesque nisl dui, in bibendum sapien
-          consectetur rhoncus. Suspendisse rhoncus nisi ac imperdiet malesuada.
-          Nam at condimentum neque. Cras ex ipsum, consectetur vitae mattis ac,
-          elementum eu quam. Quisque sem est, pulvinar vitae nulla sed, feugiat
-          fermentum risus. Phasellus finibus tristique tempus. Ut mollis mattis
-          aliquet. Quisque accumsan magna quis suscipit sagittis.
+          Introducing Amaxa, a visionary organization revolutionizing the way
+          connections are made in the online world. With a relentless focus on
+          innovation, Amaxa is dedicated to developing multiple groundbreaking
+          products that redefine the landscape of online networking. By bringing
+          offline processes online and streamlining them, our solutions empower
+          individuals to form meaningful connections, fostering collaboration,
+          and driving growth across various industries. Through the utilization
+          of advanced technologies and user-centric design, Amaxa is paving the
+          way for a new era of digital interactions, where people can
+          effortlessly connect, collaborate, and thrive in the online space.
         </p>
       </div>
     </div>
