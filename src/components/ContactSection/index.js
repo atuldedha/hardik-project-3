@@ -67,7 +67,7 @@ const ContactSection = () => {
             </div>
             <div className="flex items-center space-x-2">
               <EnvelopeIcon className="animate-pulse h-5 w-5" />
-              <p className="text-sm">hardik.panchal@amaxatech.com</p>
+              <p className="text-sm">info@amaxatech.com</p>
             </div>
             <div className="flex items-start space-x-2">
               <MapPinIcon className="animate-pulse text-base h-5 w-5" />
